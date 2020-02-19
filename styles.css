@@ -1,0 +1,22 @@
+.title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow: 4px 7px 9px lightslategrey;
+}
+body {
+    background-color: #f2ffe0;
+    text-align: center;
+}
+.photo {
+    box-shadow: 7px 7px 7pxlightslategrey;
+    border: 10px solid rgb(93, 110, 108);
+    transform: rotate(90deg);
+    width: 200px;
+    height: 200px;
+}
+.outro {
+    text-align: center;
+}
+ul {
+    list-style-position: inside;
+}

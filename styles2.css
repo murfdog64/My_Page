@@ -1,0 +1,156 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title {
+    border: solid 5px #f1f1e5;
+    width: 100%;
+    text-align: center;
+}
+
+.card {
+    background-color: #fbfbfb;
+    border: solid 2px maroon;
+    width: 350px;
+    height: 225px;
+    margin: 15px;
+    border-radius: 1%;
+    /* transition: box-shadow .1s, width .1s, height .1s, margin .1s; */
+}
+
+.link {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    top: 175px;
+    left: 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border: none;
+
+
+}
+.card:hover {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(48,46,48,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(48,46,48,1);
+    box-shadow: 10px 10px 5px 0px rgba(48,46,48,1);
+    width: 360px;
+    height: 229px;
+    margin: 10px;
+    /* transition: box-shadow .1s, width .1s, height .1s, margin .1s; */
+
+}
+
+/* Lone peak card */
+
+.card:nth-child(2n):before {
+    background-image: url(Lone.JPG);
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    width: 215px;
+    height: 161px;
+    content:"";
+    top: 10px;
+    left: 10px;
+
+}
+.card:nth-child(2n):after {
+    content: "Lone Peak";
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    font-size: 25px;
+    top: 47px;
+    left: -205px;
+
+}
+/* Garage Card */
+
+.card:nth-child(3n):before {
+    background-image: url(Cabs.JPG);
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    width: 215px;
+    height: 161px;
+    content:"";
+    top: 10px;
+    left: 10px;
+
+}
+
+.card:nth-child(3n):after {
+    content: "GarageCade";
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    font-size: 25px;
+    top: 45px;
+    left: -205px;
+
+}
+/* Provo card */
+
+.card:last-child:before {
+    background-image: url(Provo.jpg);
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    width: 215px;
+    height: 121px;
+    content:"";
+    top: 10px;
+    left: 10px;
+
+}
+
+.card:last-child:after {
+    content: "Provo Peak";
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    font-size: 26px;
+    top: 69px;
+    left: -205px;
+
+}
+
+.card:last-child {
+    display: inline-block;
+    align-items: center;
+    top: 10px;
+    left: 10px;
+
+}
+.card:first-child:before {
+    background-image: url(South_Timp.JPG);
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    content: "";
+    width: 215px;
+    height: 161px;
+    top: 10px;
+    left: 10px;
+}
+
+.card:first-child:after {
+    content: "South Timp";
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    font-size: 25px;
+    top: 47px;
+    left: -204px;
+}
+
+@media only screen and (max-width: 750px) {
+    .card {
+        width: 375px;
+        height: 250px;
+        min-width: 250px;
+    }
+
+    .card:first-child:before {
+        width: 230px;
+        height: 175px;
+    }
+}
